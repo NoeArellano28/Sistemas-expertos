@@ -1,0 +1,9 @@
+#En este ejemplo, el módulo de adquisición de conocimiento permite a los expertos en jardinería agregar nuevas plantas y sus requisitos de cuidado a la base de conocimientos existente:
+def agregar_nueva_planta(nombre, suelo, agua, luz, conocimiento):
+   conocimiento.append({
+       'nombre': nombre,
+       'suelo': suelo,
+       'agua': agua,
+       'luz': luz
+   })
+   return conocimiento
