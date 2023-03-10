@@ -1,0 +1,11 @@
+# En este ejemplo, la interfaz de usuario permite al usuario ingresar los requisitos de cuidado de la planta y muestra las plantas adecuadas:
+import streamlit as st
+
+# Interfaz de usuario básica para ingresar los requisitos de cuidado de la planta
+suelo = st.text_input('Ingrese el tipo de suelo:')
+agua = st.text_input('Ingrese la frecuencia de riego:')
+luz = st.text_input('Ingrese la cantidad de luz solar:')
+# Llamada al módulo de inferencia para determinar las plantas adecuadas
+plantas_adecuadas = inferencia(suelo, agua, luz, knowledge_base)
+# Mostrar las plantas adecuadas en la interfaz de usuario
+st.write('Las plantas adecuadas son:', ', '.join(plantas_adecuadas))
