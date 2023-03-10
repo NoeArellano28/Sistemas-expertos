@@ -1,0 +1,12 @@
+# En este ejemplo, el sistema de explicación proporciona información adicional sobre las plantas recomendadas, como sus características y necesidades adicionales:
+def explicacion(plantas, conocimiento):
+   explicaciones = []
+   for planta in plantas:
+       for conocimiento_planta in conocimiento:
+           if conocimiento_planta['nombre'] == planta:
+               explicacion_planta = conocimiento_planta['nombre'] + ': '
+               explicacion_planta += 'Suelo: ' + conocimiento_planta['suelo'] + '; '
+               explicacion_planta += 'Agua: ' + conocimiento_planta['agua'] + '; '
+               explicacion_planta += 'Luz: ' + conocimiento_planta['luz']
+               explicaciones.append(explicacion_planta)
+   return explicaciones
