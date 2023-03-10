@@ -1,0 +1,7 @@
+# En este ejemplo, el módulo de inferencia utiliza los requisitos de cuidado de la planta ingresada por el usuario para determinar qué plantas podrían ser adecuadas para su entorno
+def inferencia(suelo, agua, luz, conocimiento):
+   plantas = []
+   for planta in conocimiento:
+       if suelo in planta['suelo'] and agua in planta['agua'] and luz in planta['luz']:
+           plantas.append(planta['nombre'])
+   return plantas
