@@ -1,0 +1,17 @@
+# En este ejemplo, la base de conocimientos es una lista de diccionarios que contienen información sobre diferentes plantas y sus requisitos de cuidado:
+
+Base_de_conocimiento = [
+   {
+       'nombre': 'Lavanda',
+       'suelo': 'Suelo arenoso y bien drenado',
+       'agua': 'Regar moderadamente, evitando encharcamientos',
+       'luz': 'Pleno sol, mínimo 6 horas de sol al día'
+   },
+   {
+       'nombre': 'Tomate',
+       'suelo': 'Suelo bien drenado y rico en nutrientes',
+       'agua': 'Regar regularmente, evitando que el suelo se seque demasiado',
+       'luz': 'Pleno sol, mínimo 6 horas de sol al día'
+   },
+   # Otras plantas y sus requisitos de cuidado
+]
